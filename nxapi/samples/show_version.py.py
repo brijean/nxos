@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #Print Chassis info, Hostname and software version of a given switch.
 import json
 import requests
@@ -8,7 +9,7 @@ ip=raw_input()
 my_headers = {'content-type': 'application/json-rpc'}
 url = "http://"+ip+"/ins"
 username = "admin"
-password = "ciscotme"
+password = "c15c0123!"
 
 
 payload=[{"jsonrpc": "2.0",
