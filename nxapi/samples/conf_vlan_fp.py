@@ -26,7 +26,7 @@ with open("switch_list.txt") as fobj:
     for line in fobj:
         ip = line
         print "adding  vlan id %s  to %s" % (vlanId, ip)
-        add_vlan(ip,vlanId)
+        add_vlan(ip.strip("\n"),vlanId)
 
 
 
